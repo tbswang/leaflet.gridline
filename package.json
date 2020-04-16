@@ -6,7 +6,8 @@
   "scripts": {
     "start": "rm -r dist && parcel examples/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build"
+    "build": "parcel build",
+    "build:example": "rm -rf public && parcel build examples/index.html --public-url ./ --out-dir public --no-source-maps"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "latlon-geohash": "^2.0.0",
     "leaflet": "^1.6.0",
     "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
