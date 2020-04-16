@@ -1,0 +1,19 @@
+{
+  "name": "leaflet.gridline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -r dist && parcel examples/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "latlon-geohash": "^2.0.0",
+    "leaflet": "^1.6.0",
+    "lodash": "^4.17.15"
+  }
+}
