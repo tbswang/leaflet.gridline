@@ -4,7 +4,7 @@ VERSION=$(node --eval "console.log(require('./package.json').version);")
 
 npm run build
 
-git add dist
+git add .
 
 git commit -m "v$VERSION"
 

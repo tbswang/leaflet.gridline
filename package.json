@@ -1,6 +1,6 @@
 {
   "name": "leaflet.gridline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A leaflet plugin grid line",
   "main": "dist/index.js",
   "scripts": {
@@ -10,8 +10,12 @@
     "release": "./release.sh"
   },
   "keywords": ["leaflet", "geohash", "gridline"],
-  "author": "",
+  "author": "tbswang",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tbswang/leaflet.gridline"
+  },
   "dependencies": {
     "latlon-geohash": "^2.0.0",
     "leaflet": "^1.6.0",
