@@ -2,7 +2,9 @@
 
 VERSION=$(node --eval "console.log(require('./package.json').version);")
 
-npm run build
+npm run build:webpack
+
+git add dist/index.js -F
 
 git add .
 
