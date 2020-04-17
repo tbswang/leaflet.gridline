@@ -1,15 +1,14 @@
 import Geohash from 'latlon-geohash';
 import last from 'lodash/last';
 
-// polyline options
-const defaultOptions = {
-  color: '#979797',
-  weight: '1',
-  geohashLength: 7,
-};
-
 L.GridlineLayer = L.FeatureGroup.extend({
   initialize(options = {}) {
+    // polyline options
+    const defaultOptions = {
+      color: '#979797',
+      weight: '1',
+      geohashLength: 7,
+    };
     Object.assign(this.options, defaultOptions, options);
     this.mapHandles = [];
   },
@@ -22,7 +21,7 @@ L.GridlineLayer = L.FeatureGroup.extend({
   },
   onRemove() {
     this._map.removeLayer(this.layer);
-    this.mapHandles.forEach(({ type, handle }) => map.off(type, handle));
+    this.mapHandles.forEach(({ type, handle }) => this._map.off(type, handle));
     this.mapHandles = [];
   },
   _draw() {
